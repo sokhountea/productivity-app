@@ -1,0 +1,94 @@
+@import 'variables';
+
+.App {
+  height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
+
+  p {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+}
+
+.Loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  
+  &Icons {
+    margin-bottom: 2.5rem;
+    svg {
+      color: $light-green;
+      margin-right: 1.5rem;
+      margin-left: 1.5rem;
+    }
+  }
+
+  &Bar {
+    border-radius: 25px;
+    background-color: #def3da !important;
+    height: 15px !important;
+    
+    span {
+      background-color: $light-green !important;
+    }
+  }
+}
+
+nav {
+  background-color: $dark-green !important;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-weight: bold;
+  font-size: 18px;
+  height: 65px;
+
+  .navbar-nav {
+    width: 100%;
+    justify-content: center !important;
+  }
+  a {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    color: white !important;
+    margin: 0 1rem;
+    text-align: center;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+.modal-footer {
+  .primaryButton {
+      background-color: $dark-green;
+      border-color: $dark-green;
+  }
+}
+
+.addButton{
+  background-color: inherit !important;
+  border-color: transparent !important;
+  color: $dark-gray-text;
+  padding: 0 !important;
+
+  &:hover, &:focus {
+    color: black !important;
+  }
+}
+
+.alert {
+  width: 100%;
+}
+
+.mobile {
+  display: none;
+  @media (max-width:767px) {
+    display: inline;
+  }
+}

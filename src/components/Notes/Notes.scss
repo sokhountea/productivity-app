@@ -1,0 +1,166 @@
+@import '../../variables';
+
+.Notes {
+    padding-top: 65px;
+    padding-bottom: 100px;
+    margin: 0 0.5rem;
+    display: flex;
+    justify-content: center;
+
+    .AllNotes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 25px;
+
+        .SingleNote {
+            flex: 0 1 250px;
+            margin: 1rem 1.5rem;
+        
+            &Thumbnail {
+                cursor: pointer;
+                border: 1px solid $sidebar-gray;
+                height: 150px;
+                overflow: hidden;
+                padding: 1rem .8rem;
+                font-size: 9px !important;
+                border-radius: 15px;
+                box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.05);
+                -webkit-box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.05);
+
+                &Text {
+                    span, i, b, ul, li {
+                        font-size: 9px !important;
+                    }
+                    h1 {
+                        font-size: 0.8rem !important;
+                        font-weight: bold;
+                        margin-bottom: .5rem;
+                    }
+                }
+            }
+
+            &Title {
+                text-align: center;
+                margin-top: .7rem;
+                font-size: 0.8rem;
+                font-weight: bold;
+                color: $dark-gray-text;
+            }
+
+            &Date {
+                text-align: center;
+                margin-top:.2rem;
+                font-size: 0.7rem;
+                color: $light-gray-text;
+            }
+        }
+    }
+
+    .FixedNote {
+        position: fixed;
+        background-color: white;
+        padding-bottom: 1.5rem;
+    }
+
+    .NoteButtons {
+        border: 1px solid $light-gray-text;
+        border-radius: 10px;
+        position: relative;
+        margin-bottom: 1.5rem;
+        margin: 0 0.1rem;
+            
+        .StylingButtons {
+            padding: 0;
+            .StylingButton {
+                display: inline-flex;
+                border-right: 1px solid $sidebar-gray;
+                border-bottom: 1px solid $sidebar-gray;
+                align-items: center;
+                justify-content: center;
+                padding: 0.5rem 0;
+                color: $dark-gray-text;
+                cursor: pointer;
+
+                &:hover {
+                    color: $dark-green;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .TrashButton {
+            border-left: 1px solid $sidebar-gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: $dark-gray-text;
+            font-weight: bold;
+            transition: color .15s;
+
+            svg {
+                transition: color .15s;
+                color: $dark-gray-text;
+            }
+
+            &:hover {
+                color: #cd5858;
+                svg {
+                    color: #cd5858;
+                }
+            }
+        }
+    }
+
+    .ReturnNotes {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem 1.5rem;
+
+        &Button {
+            cursor: pointer;
+        }
+    }
+
+    .MainContent {
+        margin-top: 120px;
+        @media (max-width: 575px) {
+            margin-top: 160px;
+        }
+        
+        &Date {
+            color: $light-gray-text;
+            font-size: 0.8rem;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .ContentEditable {
+            &:focus {
+                outline: 0px solid transparent;
+            }
+            h1 {
+                font-size: 1.3rem;
+                font-weight: bold;
+                margin-bottom: 0.8rem;
+            }
+    
+            .heading {
+                font-size: 1.2rem;
+                font-weight: bold;
+                margin-bottom: 0.8rem;
+            }
+        }
+    }
+
+    .AddNotetButton {
+        width: 100%;
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        padding: 1rem 1.5rem;
+        background-color: white;
+    }
+}

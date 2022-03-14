@@ -1,0 +1,100 @@
+[
+    {
+        "name": "Reminders",
+        "color": "blue",
+        "showComplete": true,
+        "items": [
+            {
+                "title": "cancel amazon membership",
+                "date": "2022/02/20",
+                "notes": "",
+                "status": true,
+                "id": "Reminders-0"
+            },
+            {
+                "title": "change brita filter",
+                "date": "today",
+                "notes": "",
+                "status": false,
+                "id": "Reminders-1"
+            },
+            {
+                "title": "change contact lenses",
+                "date": "2022/04/01",
+                "notes": "",
+                "status": false,
+                "id": "Reminders-2"
+            },
+            {
+                "title": "pay rent",
+                "date": "2022/03/01",
+                "notes": "$1700",
+                "status": false,
+                "id": "Reminders-3"
+            }
+        ]
+    },
+    {
+        "name": "Groceries",
+        "color": "pink",
+        "showComplete": true,
+        "items": [
+            {
+                "title": "onions",
+                "date": "",
+                "notes": "",
+                "status": false,
+                "id": "Groceries-0"
+            },
+            {
+                "title": "brocs",
+                "date": "",
+                "notes": "",
+                "status": true,
+                "id": "Groceries-1"
+            },
+            {
+                "title": "green onion",
+                "date": "",
+                "notes": "",
+                "status": false,
+                "id": "Groceries-2"
+            },
+            {
+                "title": "oat milk",
+                "date": "",
+                "notes": "",
+                "status": false,
+                "id": "Groceries-3"
+            }
+        ]
+    },
+    {
+        "name": "School",
+        "color": "purple",
+        "showComplete": true,
+        "items": [
+            {
+                "title": "pay tuition",
+                "date": "today",
+                "notes": "$1675",
+                "status": true,
+                "id": "School-0"
+            },
+            {
+                "title": "drop comp251",
+                "date": "today",
+                "notes": "",
+                "status": false,
+                "id": "School-1"
+            },
+            {
+                "title": "submit comp330 paper",
+                "date": "2022/03/15",
+                "notes": "",
+                "status": false,
+                "id": "School-2"
+            }
+        ]
+    }
+]

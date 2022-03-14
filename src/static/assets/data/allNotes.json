@@ -1,0 +1,26 @@
+[
+    {
+        "title": "",
+        "date": "2022/03/10 00:15:20",
+        "text": "<h1>New Apart Address</h1><p>999 Boulevard de Henri, Montréal, QC H1H8N4</p>",
+        "id": "notes-0"
+    },
+    {
+        "title": "",
+        "date": "2021/01/15 23:15:20",
+        "text": "<ul><li>Highlights: -32</li><li>Shadows: -26</li><li>Contrast: -30</li><li>Brightness: -15</li><li>Black point: +10</li><li>Saturation: +10</li><li>Vibrance: +8</li><li>Warmth: +10</li><li>Tint: +29</li><li>Sharpness: +14</li><li>Definition: +23</li></ul>",
+        "id": "notes-1"
+    },
+    {
+        "title": "",
+        "date": "2022/01/29 13:15:20",
+        "text": "<h1>K-Dramas I've watched</h1><ul><li>Designated Survivor</li><li>The Smile Has Left Your Eyes</li><li>When The Camelia Blooms</li><li>Save Me</li><li>Chief of Staff</li><li>Circle</li><li>Tunnel</li><li>Extracurricular</li><li>Kkondae intern</li><li>Stranger 2</li></ul>",
+        "id": "notes-2"
+    },
+    {
+        "title": "",
+        "date": "2022/02/14 10:30:09",
+        "text": "<p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>",
+        "id": "notes-3"
+    }
+]

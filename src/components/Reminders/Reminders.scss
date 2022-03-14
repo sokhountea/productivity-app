@@ -1,0 +1,335 @@
+@import '../../variables';
+
+.Reminders {
+    padding-left: 235px;
+    padding-top: 65px;
+    .container {
+        max-width: none !important;
+    }
+    @media (max-width: 767px) {
+        padding-left: 0;
+    }
+
+    .SideBar {
+        background-color: $sidebar-gray;
+        position: fixed;
+        top: 65px;
+        left: 0px;
+        bottom: 0px;
+        width: 235px;
+        box-shadow: 4px 4px 19px 2px  rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 4px 4px 19px 2px  rgba(0, 0, 0, 0.1);
+        padding: 1rem 1rem;
+        @media (max-width: 767px) {
+            width: 100%;
+            max-width: none;
+        }
+
+        h1 {
+            font-size: 17px;
+            padding: 0 !important;
+        }
+
+
+        &Options {
+            display: grid !important;
+            grid-gap: 0.7rem;
+            grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            margin-bottom: 1rem !important;
+            padding: 0 !important;
+        }
+        &Option {
+            background-color: #c8c5cb;
+            width: 100%;
+            border-radius: 15px;
+            padding: 0.5rem 0 0.5rem 0;
+            text-align: center;
+            font-weight: bold;
+            color: $dark-gray-text;
+
+            box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.05);
+            -webkit-box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.05);
+
+            cursor: pointer;
+        }
+        &Option.selected {
+            background-color: $light-green;
+            @media (max-width:767px) {
+                background-color: #c8c5cb;
+            }
+        }
+
+        &Lists {
+            padding-top: 1rem;
+            margin: 0 !important;
+
+            ul {
+                color: $dark-gray-text;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                @media (max-width:767px) {
+                    background-color: #c8c5cb;
+                    border-radius: 12px;
+                }  
+
+                li {
+                    &:first-child {
+                        margin-top: 0.5rem;
+                    }
+                    hr {
+                        margin-top: 0;
+                        margin-bottom: 0.5rem;
+                        margin-left: 3rem;
+                        height: 0;
+                        @media (max-width:767px) {
+                            height: 1px;
+                        }
+                    }
+                }
+
+                .ListInfoContainer {
+                    display: flex !important;
+                    justify-content: space-between;
+                    padding: 0.5rem 1rem 0.8rem 1rem;
+                    cursor: pointer;
+
+                    .IconContainer {
+                        padding: .13rem .33rem .35rem .33rem;
+                        border-radius: 50px;
+                        margin-right: 0.5rem;
+    
+                        svg { 
+                            color: white;
+                        }
+                    }
+
+                    .CountContainer {
+                        color: $light-gray-text;
+                        svg {
+                            color: $dark-gray-text;
+                        }
+                    }
+                }
+                .ListInfoContainer.selected {
+                    background-color: #b6b6b6;
+                    color: white;
+                    border-radius: 10px;
+                    @media (max-width:767px) {
+                        background-color: transparent;
+                        color: inherit;
+                    }  
+                }
+            }
+        }
+
+
+        &AddListButton {
+            position: fixed;
+            left: 0px;
+            bottom: 10px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+
+    .ReturnLists {
+        width: 100%;
+        position: fixed;
+        padding: 0.7rem 0 0.7rem 0.5rem;
+        background-color: rgba(255, 255, 255, 0.9);
+        &Button {
+            cursor:pointer;
+        }
+    }
+
+    .MainContent {
+        margin: 2.5rem 0;
+        padding-left: 2rem;
+        padding-right: 1.5rem;
+        @media (max-width:767px) {
+            margin-top: 0;
+            padding-top: 50px;
+        }
+
+        &Header {
+            margin-bottom: 1.5rem;
+        } 
+
+        &Name {
+            font-size: 35px;
+            font-weight: bold;
+            letter-spacing: 0.2rem;
+        }
+        &PlusIcon {
+            color: $dark-gray-text;
+            text-align: right;
+            margin-top: 0.5rem;
+            padding: 0 !important;
+
+            svg {
+                cursor: pointer;
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+        &CompleteLink {
+            font-size: 13px;
+            text-align: right;
+            font-style: italic;
+            text-decoration: underline;
+            padding: 0 !important;
+            cursor: pointer;
+        }
+
+        .ListItem {
+            padding: 0 !important;
+            margin-top: 1rem !important;
+            margin-bottom: 1.5rem !important;
+            border-bottom: 1px solid $sidebar-gray;
+
+            .col-1 {
+                width: 4% !important;
+                @media (max-width: 1023px) {
+                    width: 4% !important;
+                }
+                @media (max-width: 991px) {
+                    width: 6% !important;
+                }
+                @media (max-width: 767px) {
+                    width: 7% !important;
+                }
+                @media (max-width: 480px) {
+                    width: 10% !important;
+                }
+            }
+            .col-10 {
+                width: 92% !important;
+                @media (max-width: 1023px) {
+                    width: 92% !important;
+                }
+                @media (max-width: 991px) {
+                    width: 88% !important;
+                }
+                @media (max-width: 767px) {
+                    width: 86% !important;
+                }
+                @media (max-width: 480px) {
+                    width: 80% !important;
+                }
+            }
+
+            &Checkbox {
+                display: inline-block;
+                height:17px;
+                width:17px;
+                border-radius: 50%;
+                border: 1px solid $light-gray-text;
+                box-shadow: 0px 3px 7px 2px rgba(0,0,0,0.1);
+                -webkit-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.1);
+                cursor: pointer;
+            }
+
+            &InfoDate {
+                color: $light-gray-text;
+                margin-top:.3rem;
+                margin-bottom: .3rem;
+                font-size: 13px;
+            }
+            &InfoDate.overdue {
+                color: red;
+            }
+
+            &Icons {
+                svg {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .AllMainContent {
+        margin: 2.5rem 0;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 1rem;
+        @media (max-width:767px) {
+            margin-top: 0;
+            padding-top: 50px;
+        }
+
+        &Header {
+            margin-bottom: 1.5rem;
+        } 
+
+        &Name {
+            font-size: 35px;
+            font-weight: bold;
+            letter-spacing: 0.2rem;
+        }
+
+        .MainContent {
+            padding-left: 0.5rem;
+            @media (max-width:767px) {
+                padding-top: 0 !important;
+            }
+            &Name {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+.modal-content {
+    .modal-body { 
+        .allColorsContainer {
+            display: flex !important;
+            flex-wrap: wrap;
+    
+            .colorContainer {
+                margin-right:1rem;
+    
+                .form-check-input {
+                    width: 2.5em !important;
+                    height: 2.5em !important;
+                }
+            }
+        }
+        .reminderDateContainer {
+            .MuiOutlinedInput-root {
+                border-top: 1px solid #ced4da;
+                border-radius: 8;
+            }
+            .MuiOutlinedInput-notchedOutline {
+                border-color: #ced4da !important;
+                padding: 0 !important;
+            }
+            .MuiOutlinedInput-input {
+                height: 1em !important;
+                padding: 15px 12px !important;
+            }
+            .dateSwitch {
+                .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+                    color: $dark-green !important;
+                }
+                .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
+                    background-color: $dark-green !important;
+                }
+            }
+        }
+        .form-label.error {
+            color: red;
+        }
+    }
+
+    .modal-footer {
+        .ListModalFooterButtons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+}
