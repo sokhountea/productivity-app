@@ -138,7 +138,7 @@
     .ReturnLists {
         width: 100%;
         position: fixed;
-        padding: 0.7rem 0 0.7rem 0.5rem;
+        padding: 1rem 0 1rem 0.5rem;
         background-color: rgba(255, 255, 255, 0.9);
         &Button {
             cursor:pointer;
@@ -151,7 +151,7 @@
         padding-right: 1.5rem;
         @media (max-width:767px) {
             margin-top: 0;
-            padding-top: 50px;
+            padding-top: 65px;
         }
 
         &Header {
@@ -258,7 +258,7 @@
         padding-right: 1rem;
         @media (max-width:767px) {
             margin-top: 0;
-            padding-top: 50px;
+            padding-top: 65px;
         }
 
         &Header {
