@@ -21,7 +21,7 @@ class App extends React.Component {
         this.setState({
           isLoading: false
         })
-      }, 2000);
+      }, 1500);
     }
   }
 
