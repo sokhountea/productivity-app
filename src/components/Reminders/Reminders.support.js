@@ -169,10 +169,11 @@ export const SelectedList = ({
         <React.Fragment>
             {(!isChildren && !showSideBar) &&
                 <Row className="ReturnLists mobile">
-                    <Col xs={12}>
+                    <Col xs={12}
+                        onClick={() => handleReturnToListsButton()}
+                    >
                         <span
                             className="ReturnListsButton"
-                            onClick={() => handleReturnToListsButton()}
                         >
                             <ChevronLeft size={20} /> Lists
                         </span>

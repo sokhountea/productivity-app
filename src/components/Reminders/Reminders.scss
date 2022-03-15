@@ -182,7 +182,9 @@
             font-style: italic;
             text-decoration: underline;
             padding: 0 !important;
-            cursor: pointer;
+            > span {
+                cursor: pointer; 
+            }
         }
 
         .ListItem {
