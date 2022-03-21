@@ -79,7 +79,7 @@ class Reminders extends React.Component {
             this.construstTodayList();
 
             this.setState({
-                currList: currList === null ? this.state.allLists.length > 0 ? this.state.allLists[0] : {} : currList,
+                currList: currList === null && this.state.allLists.length > 0 ? this.state.allLists[0] : currList,
                 showSideBar: window.innerWidth > 767 ? true : false
             });
         })
